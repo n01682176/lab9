@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interactive Photo Gallery</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Photo Gallery</h1>
+</header>
+<section class="filters">
+    <button class="filter-button active" data-category="all">All</button>
+    <button class="filter-button" data-category="nature">Nature</button>
+    <button class="filter-button" data-category="architecture">Architecture</button>
+    <button class="filter-button" data-category="people">People</button>
+</section>
+<section class="gallery">
+    <div class="image nature"><img src="nature1.jpg" alt="Nature 1"></div>
+    <div class="image nature"><img src="nature2.jpg" alt="Nature 1"></div>
+    <div class="image nature"><img src="nature3.jpg" alt="Nature 1"></div>
+
+    <div class="image architecture"><img src="architecture1.jpg" alt="Architecture 1"></div>
+    <div class="image architecture"><img src="architecture2.jpg" alt="Architecture 1"></div>
+    <div class="image architecture"><img src="architecture3.jpg" alt="Architecture 1"></div>
+    
+    <div class="image people"><img src="people1.jpg" alt="People 1"></div>
+    <div class="image people"><img src="people2.jpg" alt="People 1"></div>
+    <div class="image people"><img src="people3.jpg" alt="People 1"></div>
+</section>
+
+<div id="lightbox">
+    <span class="close-button">&times;</span>
+    <img class="lightbox-image" src="" alt="Enlarged Image">
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
